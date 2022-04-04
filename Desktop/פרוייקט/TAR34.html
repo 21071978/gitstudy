@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user=prompt("Who's there");
+        if(user=="Admin"){
+            let password=prompt("Password?");
+             if (password=="TheMaster")
+                        console.log("Welcome!");
+             else if (password=="Other") 
+                        console.log("wrong password");
+             else if (password==null || password== "")  
+                        console.log("Canceled");                   
+        }
+        else if(user=="Other")
+                  console.log("I don't know you");
+         else if (user==null || user== "") 
+                        console.log("Canceled"); 
+           </script>
+</body>
+</html>
